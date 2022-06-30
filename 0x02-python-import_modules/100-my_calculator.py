@@ -16,12 +16,12 @@ if __name__ == "__main__":
 
     result = None
     if operator == "+":
-        result = a + b
+        result = add(a, b)
     elif operator == "-":
-        result = a - b
+        result = sub(a, b)
     elif operator == "*":
-        result = a * b
+        result = mul(a, b)
     elif operator == "/":
-        result = a / b
+        result = div(a, b)
     if result:
         print("{} {} {} = {}".format(a, operator, b, result))
