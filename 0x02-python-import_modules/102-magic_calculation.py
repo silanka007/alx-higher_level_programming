@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from calculator_1 import add, sub
+import dis
 
 
 def magic_calculation(a, b):
@@ -10,4 +11,7 @@ def magic_calculation(a, b):
         return c
     else:
         return sub(a, b)
-    return
+        return
+
+
+print(dis.dis(magic_calculation))
