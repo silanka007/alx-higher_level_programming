@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def print_matrix_integer(matrix=[[]]):
-    if matrix == None:
+    if matrix is None:
         return None
     for layer in matrix:
         for i in range(len(layer)):
