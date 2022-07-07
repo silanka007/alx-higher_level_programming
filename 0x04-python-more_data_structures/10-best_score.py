@@ -8,8 +8,11 @@ def best_score(a_dictionary):
     if len(keys) == 0:
         return None
 
-    best = a_dictionary[keys[0]]
+    best_key = keys[0]
+    best = a_dictionary[best_key]
+
     for key in keys:
         if a_dictionary[key] > best:
             best = a_dictionary[key]
-    return best
+            best_key = key
+    return best_key
