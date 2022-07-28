@@ -6,4 +6,4 @@ class Square:
     """ represents a square class with instance private attribute - size"""
 
     def __init__(self, size):
-        self._size = size
+        self._Square__size = size
