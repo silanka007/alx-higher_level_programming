@@ -31,7 +31,7 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
 
         x, y = value
-        not_pos_ints = x < 0 and y < 0
+        not_pos_ints = x < 0 or y < 0
         if (not isinstance(x, int) or not isinstance(y, int) or not_pos_ints):
             raise TypeError("position must be a tuple of 2 positive integers")
         self._Square__position = (x, y)
