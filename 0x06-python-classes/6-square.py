@@ -28,7 +28,6 @@ class Square:
     @position.setter
     def position(self, value):
         print(f"setting {value}")
-        self.__position = value
         if (isinstance(value, tuple) and len(value) == 2):
             x, y = value
             if (isinstance(x, int) and isinstance(y, int)):
