@@ -1,0 +1,39 @@
+The ``base_geometry`` module
+=============================
+
+importing the ``base_geometry`` module:
+>>> bg = __import__("7-base_geometry")
+
+checking for module docstring:
+>>> bg_doc = bg.__doc__
+>>> len(bg_doc) > 0
+True
+
+importing ``BaseGeometry`` class:
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+checking for class docstring:
+>>> class_doc = BaseGeometry.__doc__
+>>> len(class_doc) > 0
+True
+
+instantiating class:
+>>> myClass = BaseGeometry()
+
+checking for ``area`` instance method docstring:
+>>> area_doc = myClass.area.__doc__
+>>> len(area_doc) > 0
+True
+
+checking that ``area`` method raises exception:
+>>> myClass.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
+checking for ``integer_validator`` instance method docstring:
+>>> integer_validator_doc = myClass.integer_validator.__doc__
+>>> len(integer_validator_doc) > 0
+True
+
+
