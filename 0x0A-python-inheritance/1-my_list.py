@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-contains the MyList class
+Module: 1-my_list
 """
 
 
@@ -10,5 +10,12 @@ class MyList(list):
     """
 
     def print_sorted(self):
-        """Prints list elements(int) in ascending order"""
+        """
+        Prints list elements(int) in ascending order
+        """
         print(sorted(self))
+
+
+# if __name__ == "__main__":
+#     import doctest
+#     doctest.testmod()

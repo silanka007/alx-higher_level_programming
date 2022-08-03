@@ -1,0 +1,21 @@
+ The ``1-my_list`` module
+=========================
+
+importing ``1-my_list`` module:
+>>> my_list_mod = __import__("1-my_list")
+
+checking for module docstrings:
+>>> m = my_list_mod.__doc__
+>>> len(m) > 0
+True
+
+importing ``MyList`` from the ``1-my_list`` module:
+>>> MyList = my_list_mod.MyList
+
+checking ``MyList`` class docstrings:
+>>> c = MyList.__doc__
+>>> len(c) > 0
+True
+
+instantiating an object from ``MyList``:
+>>> my_list = MyList()
